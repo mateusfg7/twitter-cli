@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # File with API keys
-keys.json
+keys.temp.json
