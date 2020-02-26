@@ -1,3 +1,3 @@
-from auth.keys.load import get_keys
+from auth.validate import validade
 
-get_keys()
+
