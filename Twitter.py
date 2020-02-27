@@ -1,8 +1,11 @@
-from choices.choice import choice_menu
+from functions.text import banner
+from functions.text import choice_menu
 
-print('TWITTER CLI')
-print('1 - Post on twitter')
+from choices.choice import choice_request
 
-query = input('> ')
+print(banner())
 
-choice_menu(query)
+while True:
+    print(choice_menu())
+    query = input('> ')
+    choice_request(query)

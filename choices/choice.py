@@ -5,7 +5,7 @@ from functions.text import update_status_response_text
 
 from api_requests.api_request import status_update
 
-def choice_menu(choice):
+def choice_request(choice):
     
     if choice == '1':
         
