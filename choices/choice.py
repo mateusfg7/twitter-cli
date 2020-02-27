@@ -1,7 +1,7 @@
 from pprint import pprint
 
 from functions.response import handling_response
-from functions.resTXT import update_status_response_text
+from functions.text import update_status_response_text
 
 from api_requests.api_request import status_update
 
