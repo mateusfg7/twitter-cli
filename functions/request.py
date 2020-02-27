@@ -1,6 +1,6 @@
 import json
 
-def handling_requests(request):
-    decodeRequest = request.decode()
+def handling_response(response):
+    decodeRequest = response.decode()
     jsonRequest = json.loads(decodeRequest)
     return jsonRequest
