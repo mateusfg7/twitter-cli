@@ -1,3 +1,8 @@
+import os
+
+def clear():
+    os.system('clear')
+
 def banner():
     return (
         '''
