@@ -15,3 +15,7 @@ def choice_request(choice):
         requestObject = handling_response(updateStatusRequest[1])
         
         print(update_status_response_text(requestObject))
+    
+    elif choice == '0':
+        print('exiting...')
+        exit()
