@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from functions.request import handling_response
+from functions.response import handling_response
 
 from api_requests.api_request import status_update
 
