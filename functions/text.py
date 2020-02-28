@@ -38,3 +38,15 @@ Tweet: {responseObject['text']}
 User: {responseObject['user']['name']}
             '''
     )
+
+def home_timelin_response_text(responseObject):
+    return (
+        f'''
+{responseObject['user']['name']}
+{responseObject['user']['screen_name']}
+
+{responseObject['text']}
+
+
+        '''
+    )
