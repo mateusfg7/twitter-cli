@@ -26,15 +26,15 @@ def choice_menu():
     )
 
 
-def update_status_response_text(requestObject):
+def update_status_response_text(responseObject):
     return (
         f'''
-Tweet created at {requestObject['created_at']}
-Hashtags: {requestObject['entities']['hashtags']}
-Urls: {requestObject['entities']['urls']}
-User Mentions: {requestObject['entities']['user_mentions']}
+Tweet created at {responseObject['created_at']}
+Hashtags: {responseObject['entities']['hashtags']}
+Urls: {responseObject['entities']['urls']}
+User Mentions: {responseObject['entities']['user_mentions']}
 
-Tweet: {requestObject['text']}
-User: {requestObject['user']['name']}
+Tweet: {responseObject['text']}
+User: {responseObject['user']['name']}
             '''
     )

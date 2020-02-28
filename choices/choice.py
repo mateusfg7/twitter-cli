@@ -29,8 +29,7 @@ def choice_request(choice):
         homeTimelineRequest = home_timeline()
         responseObject = handling_response(homeTimelineRequest[1])
 
-        pprint(responseObject)
-        pprint(responseObject)
+        pprint(responseObject[1])
     
     elif choice == '0':
         print('exiting...')
