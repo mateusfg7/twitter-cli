@@ -20,6 +20,7 @@ def choice_menu():
     return (
         '''
 1 - Post on twitter
+2 - Home Timeline
 0 - Exit
         '''
     )
