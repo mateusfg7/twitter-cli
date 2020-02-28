@@ -7,3 +7,9 @@ def status_update(tweet):
         method='POST'
     )
     return updateStatusRequest
+
+def home_timeline():
+    homeTimelineRequest = client.request(
+        'https://api.twitter.com/1.1/statuses/home_timeline.json'
+    )
+    return homeTimelineRequest
