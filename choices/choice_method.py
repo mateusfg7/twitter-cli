@@ -10,9 +10,12 @@ from functions.text import banner
 from functions.text import update_status_response_text
 from functions.text import home_timelin_response_text
 
-def status_update_function():
+def clearAndBanner():
     clear()
     print(banner())
+
+def status_update_function():
+    clearAndBanner()
     
     tweet = input('\nTweet: ')
     
@@ -22,11 +25,11 @@ def status_update_function():
     print(update_status_response_text(responseObject))
 
 def home_timeline_function():
-    clear()
-    print(banner())
+    clearAndBanner()
 
     homeTimelineRequest = home_timeline()
     responseObject = handling_response(homeTimelineRequest[1])
 
-    print(home_timelin_response_text(responseObject[1]))
-    # pprint(responseObject[1])
+    for tweet in responseObject:
+        print(home_timelin_response_text(tweet))
+    print(f'{len(responseObject)} render tweets')
